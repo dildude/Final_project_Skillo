@@ -1,7 +1,6 @@
 package org.mincho.POM;
 
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +12,7 @@ import java.time.Duration;
 
 public class ISkillo {
 
-    final String BASE_URL = "http://training.skillo-bg.com:4200";
+    final String BASE_URL = "http://training.skillo-bg.com:4200/";
     WebDriver driver;
     WebDriverWait wait;
     Logger log;
@@ -41,6 +40,29 @@ public class ISkillo {
         element.clear();
         element.sendKeys(inputText);
 
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("return document.readyState").equals("complete");
+    }
+
+    public String requestedUrl(String pageSufix){
+        return BASE_URL + pageSufix;
+    }
+
+    public void navigateTo(String pageURLsufix){
+        String currentURL = BASE_URL + pageURLsufix;
+
+        driver.get(currentURL);
+        log.info("CONFIRM # The user has navigating to : " +currentURL);
+
+        waitPageTobeFullLoaded();
+    }
+
+    public boolean isUrlLoaded(String pageURL) {
+        waitPageTobeFullLoaded();
+        return wait.until(ExpectedConditions.urlContains(pageURL));
+    }
+
+    public void waitPageTobeFullLoaded(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
     }
