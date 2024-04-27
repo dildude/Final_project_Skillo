@@ -38,7 +38,6 @@ public class LoginPage extends ISkillo {
         PageFactory.initElements(driver, this);
     }
 
-    //User Actions
     public void openLoginPage(){
         this.driver.get(LOGIN_PAGE_URL);
         wait.until(ExpectedConditions.urlContains(LOGIN_PAGE_URL));
@@ -60,6 +59,8 @@ public class LoginPage extends ISkillo {
     public void submitCredentials() {
         waitAndClick(loginFormSubmitButton);
     }
+
+    // TODO 2та метода да ги вкарам в един
     public void msgStatusAfterSubmitSuccessfulLogin() {
         String expectedMsgText = "Successful login!";
         String msgText = popUpMsg.getText();
