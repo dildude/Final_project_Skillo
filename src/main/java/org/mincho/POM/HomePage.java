@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage extends ISkillo {
 
-    public static final String HOME_PAGE_URL = "posts/all";
+    public static final String HOME_PAGE_SUFIX = "posts/all";
 
     @FindBy (id = "nav-link-login")
     private WebElement navigationLoginButton;
@@ -26,7 +26,7 @@ public class HomePage extends ISkillo {
     }
 
     public void openHomePage () {
-        navigateTo(HOME_PAGE_URL);
+        navigateTo(HOME_PAGE_SUFIX);
     }
 
     public void clickOnLoginButton(){

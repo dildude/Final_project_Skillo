@@ -43,7 +43,7 @@ public class ISkillo {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
     }
-
+    //TODO See if it's used
     public String requestedUrl(String pageSufix){
         return BASE_URL + pageSufix;
     }
@@ -56,9 +56,10 @@ public class ISkillo {
 
         waitPageTobeFullLoaded();
     }
-
+    //TODO See if it's used
     public boolean isUrlLoaded(String pageURL) {
         waitPageTobeFullLoaded();
+        log.info("CONFIRM # The URL is loaded");
         return wait.until(ExpectedConditions.urlContains(pageURL));
     }
 

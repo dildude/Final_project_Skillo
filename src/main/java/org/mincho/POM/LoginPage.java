@@ -1,19 +1,18 @@
 package org.mincho.POM;
 
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.time.Duration;
 
 public class LoginPage extends ISkillo {
-    public static final String LOGIN_PAGE_URL = "http://training.skillo-bg.com:4300/users/login";
+    public static final String LOGIN_PAGE_SUFIX = "users/login";
 
-    //WebElements or other  UI Map
     @FindBy(css = "p.h4")
     private WebElement loginPageHeaderTitle;
     @FindBy(id = "defaultLoginFormUsername")
@@ -32,32 +31,45 @@ public class LoginPage extends ISkillo {
     private WebElement popUpMsg;
 
     //Create a constructor
-    public LoginPage(WebDriver driver) {
-        super(driver);
-
+    public LoginPage(WebDriver driver, Logger log) {
+        super(driver,log);
         PageFactory.initElements(driver, this);
     }
 
-    public void openLoginPage(){
-        this.driver.get(LOGIN_PAGE_URL);
-        wait.until(ExpectedConditions.urlContains(LOGIN_PAGE_URL));
-    }
-    public void validationOfTheHeaderInLoginPage(){
-        String expectedTitleHeader = "Sign in";
-        String loginFormTitleHeader = loginPageHeaderTitle.getText();
-        Assert.assertEquals(loginFormTitleHeader,expectedTitleHeader);
-
-    }
-    public void enterCredentialsValid() {
-        typeTextInField(usernameInputField, "Minchotest");
-        typeTextInField(passwordInputField, "123456");
+    public void  provideUserName(String userName) {
+        typeTextInField(usernameInputField,userName);
     }
 
-    public void enterCredentialsInvalid() {
-
+    public void providePassword(String userPassword){
+        typeTextInField(passwordInputField,userPassword);
     }
-    public void submitCredentials() {
+
+    public void clickSubmitButton(){
         waitAndClick(loginFormSubmitButton);
+    }
+
+    public void loginWithUserAndPassword(String userName, String password) {
+        provideUserName(userName);
+        providePassword(password);
+        clickSubmitButton();
+    }
+
+    public  String getUserNamePlaceHolder () {
+        wait.until(ExpectedConditions.visibilityOf(usernameInputField));
+        return usernameInputField.getAttribute("value");
+    }
+
+    public boolean isUserNamePlaceHolderCorrect(String expectedUserNamePlaceHolder) {
+        boolean isPerRequirements = false;
+        try {
+            String actualUserNamePlaceHolder = getUserNamePlaceHolder();
+            isPerRequirements = expectedUserNamePlaceHolder.equals(actualUserNamePlaceHolder);
+
+        }catch (NoSuchElementException e){
+            log.error("ERROR ! The username placeHolder is not correct");
+            isPerRequirements = false;
+        }
+        return isPerRequirements;
     }
 
     // TODO 2та метода да ги вкарам в един
