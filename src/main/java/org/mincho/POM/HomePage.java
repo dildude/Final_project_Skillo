@@ -1,4 +1,4 @@
-package org.Mincho.POM;
+package org.mincho.POM;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import java.time.Duration;
 
 public class HomePage {
     //1. Static vars
-    public static final String HOME_PAGE_URL = "http://training.skillo-bg.com:4300/posts/all";
+    public static final String HOME_PAGE_URL = "http://training.skillo-bg.com:4200/posts/all";
     private WebDriver driver;
     private WebDriverWait wait;
 
@@ -23,7 +23,7 @@ public class HomePage {
     public HomePage(WebDriver driver){
         this.driver = driver;
         wait = new WebDriverWait(this.driver,Duration.ofSeconds(10));
-        PageFactory.initElements(driver,this); //This need to be done every time so it can initialise the @FindBy elements
+        PageFactory.initElements(driver,this); //This need to be done every time, so it can initialise the @FindBy elements
 
     }
     //4. User Actions

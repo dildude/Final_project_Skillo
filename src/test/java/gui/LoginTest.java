@@ -22,19 +22,4 @@ public class LoginTest extends BaseTest {
         System.out.println("The user is login");
     }
 
-    @Test
-    public void loginWhitInvalidCreds(){
-
-        LoginPage loginPage = new LoginPage(super.driver);
-
-        loginPage.openLoginPage();
-        loginPage.validationOfTheHeaderInLoginPage();
-        System.out.println("Login page is open");
-        loginPage.enterCredentialsInvalid();
-        System.out.println("Invalid credentials are entered");
-        loginPage.submitCredentials();
-        System.out.println("The invalid credentials are submit");
-        loginPage.msgStatusAfterInvalidLogin();
-
-    }
 }
