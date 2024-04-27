@@ -1,50 +1,57 @@
 package org.mincho.POM;
 
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+public class HomePage extends ISkillo {
 
-public class HomePage {
-    //1. Static vars
-    public static final String HOME_PAGE_URL = "http://training.skillo-bg.com:4200/posts/all";
-    private WebDriver driver;
-    private WebDriverWait wait;
+    public static final String HOME_PAGE_URL = "posts/all";
 
-    //2. WebElements (UI mappings)
     @FindBy (id = "nav-link-login")
     private WebElement navigationLoginButton;
+    @FindBy (id = "nav-link-new-post")
+    private WebElement navigationNewPostButton;
+    @FindBy (xpath = "//ul[contains(@class,'navbar-nav my-ml d-none d-md-block')]")
+    private WebElement navigationLogOutButton;
 
-    //3. Constructor
-    public HomePage(WebDriver driver){
-        this.driver = driver;
-        wait = new WebDriverWait(this.driver,Duration.ofSeconds(10));
-        PageFactory.initElements(driver,this); //This need to be done every time, so it can initialise the @FindBy elements
+    public HomePage (WebDriver driver, Logger log)  {
+        super(driver,log);
 
+        PageFactory.initElements(driver,this);
     }
-    //4. User Actions
-    public void openHomePage(){
-        this.driver.get(HOME_PAGE_URL);
-        wait.until(ExpectedConditions.urlContains(HOME_PAGE_URL));
+
+    public void openHomePage () {
+        navigateTo(HOME_PAGE_URL);
     }
-    public void navigateToLoginPageViaClickOnNavigationLoginButton(){
+
+    public void clickOnLoginButton(){
         waitAndClick(navigationLoginButton);
     }
-
-    //6. Assertions
-
-
-    //6. Support verification methods
-    private void waitAndClick(WebElement element) {
-        wait.until(ExpectedConditions.visibilityOf(element));
-        element.click();
-        System.out.println("THE USER HAS CLICKED ON "+ element);
+    public void clickOnNewPostButton(){
+        waitAndClick(navigationNewPostButton);
     }
 
+    public void waitNewPostButtonToAppear(){
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy((By) navigationNewPostButton));
+    }
 
+    public boolean isLogOutButtonShown(){
+        boolean isButtonShown = false;
+        log.info(" ACTION @ The user is verifying if the navigation log out button is presented");
+        try {
+            wait.until(ExpectedConditions.visibilityOf(navigationLogOutButton));
+            log.info("CONFIRM # Navigation logout button is presented to the user");
+            isButtonShown= true;
+        } catch ( TimeoutException e) {
+            log.error("ERROR ! The navigation logout button was not presented to the user");
+            isButtonShown = false;
+        }
+        return isButtonShown;
+    }
 
 }
