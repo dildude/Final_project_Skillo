@@ -24,7 +24,7 @@ public class BaseTest {
     protected WebDriver driver;
     protected Logger log;
 
-    @BeforeTest
+    @BeforeSuite
     protected final void setupTestSuite() throws IOException {
         cleanDirectory(REPORTS_DIR);
         cleanDirectory(SCREENSHOTS_DIR);
@@ -56,7 +56,7 @@ public class BaseTest {
         driver.quit();
     }
 
-    @AfterTest
+    @AfterSuite
     public void deleteDownloadedFiles() throws IOException {
         cleanDirectory(DOWNLOAD_DIR);
     }
@@ -66,6 +66,7 @@ public class BaseTest {
         File directory = new File(directoryPath);
 
         Assert.assertTrue(directory.isDirectory(), "Invalid directory!");
+       // Assert.assertFalse(directory.isDirectory(), "Invalid directory!");
 
         FileUtils.cleanDirectory(directory);
         String[] fileList = directory.list();

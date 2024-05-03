@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="stting up the master">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gui/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gui/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/login/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/uploadFiles/uploadImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/upload/testImg.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.LoginTest.loginWhirValidCreds.executor": "Run",
-    "TestNG.LoginTest.navigatingAndLoggingIn.executor": "Run",
+    "TestNG.LoginTest.navigatingAndLoggingIn.executor": "Debug",
     "TestNG.TestClass.testing.executor": "Debug",
     "git-widget-placeholder": "FRFO",
     "kotlin-language-version-configured": "true",
@@ -69,7 +64,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.TestClass.testing">
+  <component name="RunManager" selected="TestNG.LoginTest.navigatingAndLoggingIn">
     <configuration name="LoginTest.loginWhirValidCreds" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
@@ -126,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestClass.testing" />
         <item itemvalue="TestNG.LoginTest.navigatingAndLoggingIn" />
+        <item itemvalue="TestNG.TestClass.testing" />
         <item itemvalue="TestNG.LoginTest.loginWhirValidCreds" />
       </list>
     </recent_temporary>
@@ -198,6 +193,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/gui/base/BrowserDriverFactory.java</url>
           <line>27</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gui/base/BaseTest.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
