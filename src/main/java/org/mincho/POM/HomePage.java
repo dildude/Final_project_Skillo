@@ -16,7 +16,7 @@ public class HomePage extends ISkillo {
     private WebElement navigationLoginButton;
     @FindBy (id = "nav-link-new-post")
     private WebElement navigationNewPostButton;
-    @FindBy (xpath = "//ul[contains(@class,'navbar-nav my-ml d-none d-md-block')]")
+    @FindBy (xpath = "//i[@class='fas fa-sign-out-alt fa-lg']")
     private WebElement navigationLogOutButton;
 
     public HomePage (WebDriver driver, Logger log)  {
