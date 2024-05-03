@@ -1,4 +1,4 @@
-package gui.regression;
+package gui.regression.login;
 
 import gui.base.BaseTest;
 import org.mincho.POM.HomePage;

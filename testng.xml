@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:\Users\vbass\IdeaProjects\Selenium_4_TestNG_TAF">
+        <classes>
+            <class name="gui.regression.login.LoginTest">
+                <methods>
+                    <include name="verifyUserCanNavigateToLoginPageViaNavigationLoginButton"/>
+                </methods>
+            </class>
+            <class name="gui.TestClass">
+                <methods>
+                    <include name="testing"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

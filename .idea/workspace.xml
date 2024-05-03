@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/gui/regression/LoginTest.java" afterDir="false" />
+    <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="stting up the master">
+      <change afterPath="$PROJECT_DIR$/src/test/java/gui/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gui/LoginTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gui/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/login/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uploadFiles/uploadImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/upload/testImg.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,9 @@
     &quot;accountId&quot;: &quot;98ea5782-37c7-48b2-8f38-56e2eb2dd4d6&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -59,22 +62,24 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.LoginTest.loginWhirValidCreds.executor": "Run",
     "TestNG.LoginTest.navigatingAndLoggingIn.executor": "Run",
+    "TestNG.TestClass.testing.executor": "Debug",
     "git-widget-placeholder": "FRFO",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/vbass/Downloads/TAF-master",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginTest.navigatingAndLoggingIn">
+  <component name="RunManager" selected="TestNG.TestClass.testing">
     <configuration name="LoginTest.loginWhirValidCreds" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.regression.*" />
+          <option name="PATTERN" value="gui.regression.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gui" />
-      <option name="MAIN_CLASS_NAME" value="gui.regression.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="gui.regression.login.LoginTest" />
       <option name="METHOD_NAME" value="loginWhirValidCreds" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -87,13 +92,31 @@
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.regression.*" />
+          <option name="PATTERN" value="gui.regression.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gui.regression" />
-      <option name="MAIN_CLASS_NAME" value="gui.regression.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="gui.regression.login.LoginTest" />
       <option name="METHOD_NAME" value="navigatingAndLoggingIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.testing" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_4_TestNG_TAF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gui" />
+      <option name="MAIN_CLASS_NAME" value="gui.TestClass" />
+      <option name="METHOD_NAME" value="testing" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestClass.testing" />
         <item itemvalue="TestNG.LoginTest.navigatingAndLoggingIn" />
         <item itemvalue="TestNG.LoginTest.loginWhirValidCreds" />
       </list>
@@ -151,5 +175,31 @@
     <MESSAGE value="new repo for the last HW" />
     <MESSAGE value="stting up the master" />
     <option name="LAST_COMMIT_MESSAGE" value="stting up the master" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/gui/base/BrowserDriverFactory.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

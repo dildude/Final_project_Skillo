@@ -24,14 +24,16 @@ public class BaseTest {
     protected WebDriver driver;
     protected Logger log;
 
-    @BeforeSuite
+    @BeforeTest
     protected final void setupTestSuite() throws IOException {
         cleanDirectory(REPORTS_DIR);
         cleanDirectory(SCREENSHOTS_DIR);
     }
 
     @Parameters({ "browser" })
+
     @BeforeMethod(alwaysRun = true)
+
     public void setUp(@Optional("chrome") String browser, ITestContext ctx, Method method) {
         String testName = ctx.getCurrentXmlTest().getName();
 
@@ -54,7 +56,7 @@ public class BaseTest {
         driver.quit();
     }
 
-    @AfterSuite
+    @AfterTest
     public void deleteDownloadedFiles() throws IOException {
         cleanDirectory(DOWNLOAD_DIR);
     }

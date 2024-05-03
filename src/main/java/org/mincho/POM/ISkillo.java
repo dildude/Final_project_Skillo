@@ -43,10 +43,10 @@ public class ISkillo {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
     }
-    //TODO See if it's used
-    public String requestedUrl(String pageSufix){
-        return BASE_URL + pageSufix;
-    }
+//    //TODO See if it's used
+//    public String requestedUrl(String pageSufix){
+//        return BASE_URL + pageSufix;
+//    }
 
     public void navigateTo(String pageURLsufix){
         String currentURL = BASE_URL + pageURLsufix;
