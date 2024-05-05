@@ -29,9 +29,10 @@ public class ISkillo {
         wait.until(ExpectedConditions.elementToBeClickable(element));
 
         element.click();
+        log.info("The user has clicked on element" + element);
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("return document.readyState").equals("complete");
+        waitPageTobeFullLoaded();
+
     }
 
     public void typeTextInField(WebElement element, String inputText){
@@ -40,8 +41,7 @@ public class ISkillo {
         element.clear();
         element.sendKeys(inputText);
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("return document.readyState").equals("complete");
+        waitPageTobeFullLoaded();
     }
 //    //TODO See if it's used
 //    public String requestedUrl(String pageSufix){
@@ -66,8 +66,7 @@ public class ISkillo {
     public void waitPageTobeFullLoaded(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
+        log.info("DOM tree is fully loaded");
     }
-
-
 
 }

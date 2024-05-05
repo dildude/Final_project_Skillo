@@ -21,8 +21,8 @@ public class BaseTest {
     public static final String DOWNLOAD_DIR = MAIN_RESOURCES_DIR.concat("download/");
     public static final String SCREENSHOTS_DIR = MAIN_RESOURCES_DIR.concat("screenshots/");
     public static final String REPORTS_DIR = MAIN_RESOURCES_DIR.concat("reports/");
-    protected WebDriver driver;
-    protected Logger log;
+    public WebDriver driver;
+    public Logger log;
 
     @BeforeSuite
     protected final void setupTestSuite() throws IOException {
@@ -34,17 +34,18 @@ public class BaseTest {
 
     @BeforeMethod(alwaysRun = true)
 
-    public void setUp(@Optional("chrome") String browser, ITestContext ctx, Method method) {
-        String testName = ctx.getCurrentXmlTest().getName();
+    public void setUp(@Optional("chrome") String browser, Method method) {
+        String testCaseName = method.getName();
 
-        log = LogManager.getLogger(testName);
-        log.info(" ==== Test method name: "+ method.getName() +" ====");
+        log = LogManager.getLogger(testCaseName);
+        log.info(" ==== Test method name: {} ====", method.getName());
+
 
         BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
         driver = factory.createDriver();
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
     }
 
