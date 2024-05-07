@@ -43,10 +43,6 @@ public class ISkillo {
 
         waitPageTobeFullLoaded();
     }
-//    //TODO See if it's used
-//    public String requestedUrl(String pageSufix){
-//        return BASE_URL + pageSufix;
-//    }
 
     public void navigateTo(String pageURLsufix){
         String currentURL = BASE_URL + pageURLsufix;
@@ -55,12 +51,6 @@ public class ISkillo {
         log.info("CONFIRM # The user has navigating to : " +currentURL);
 
         waitPageTobeFullLoaded();
-    }
-    //TODO See if it's used
-    public boolean isUrlLoaded(String pageURL) {
-        waitPageTobeFullLoaded();
-        log.info("CONFIRM # The URL is loaded");
-        return wait.until(ExpectedConditions.urlContains(pageURL));
     }
 
     public void waitPageTobeFullLoaded(){

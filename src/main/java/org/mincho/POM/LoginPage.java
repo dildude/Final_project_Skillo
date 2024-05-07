@@ -15,7 +15,7 @@ public class LoginPage extends ISkillo {
 
     @FindBy(css = "p.h4")
     private WebElement loginPageHeaderTitle;
-    @FindBy(id = "defaultLoginFormUsername")
+    @FindBy(name = "usernameOrEmail")
     private WebElement usernameInputField;
     @FindBy(id = "defaultLoginFormPassword")
     private WebElement passwordInputField;
@@ -59,6 +59,7 @@ public class LoginPage extends ISkillo {
         return usernameInputField.getAttribute("value");
     }
 
+    //TODO да видя трябва ли ми този метод
     public boolean isUserNamePlaceHolderCorrect(String expectedUserNamePlaceHolder) {
         boolean isPerRequirements = false;
         try {
@@ -72,7 +73,7 @@ public class LoginPage extends ISkillo {
         return isPerRequirements;
     }
 
-    // TODO 2та метода да ги вкарам в един
+    // TODO Да влезнат 2та метода в теста
     public void msgStatusAfterSubmitSuccessfulLogin() {
         String expectedMsgText = "Successful login!";
         String msgText = popUpMsg.getText();
@@ -83,6 +84,7 @@ public class LoginPage extends ISkillo {
         String msgText = popUpMsg.getText();
         Assert.assertEquals(msgText,expectedMsgText);
     }
+    //TODO да направя 2ри тест с включен този метод
     public void selectingRememberMeCheckBox(){
         rememberMeCheckBox.click();
         System.out.println("Remember me is selected");
