@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="stting up the master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/PostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/PostPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/TestClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/e2e/NeedName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/e2e/EndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/login/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/post/PostHappyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/post/PostHappyPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTestHappyPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,35 +56,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Selenium_4_TestNG_TAF [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Selenium_4_TestNG_TAF [validate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.LoginTest.loginWhirValidCreds.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.navigatingAndLoggingIn.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTest.navigationAndRegistration.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestClass.testing.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;FRFO&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vbass/Downloads/TAF-master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.Selenium_4_TestNG_TAF [clean].executor": "Run",
+    "Maven.Selenium_4_TestNG_TAF [validate].executor": "Run",
+    "Maven.Selenium_4_TestNG_TAF [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.EndToEndTest.verifyUserCanCreateNewPost.executor": "Debug",
+    "TestNG.LoginTest.loginWhirValidCreds.executor": "Run",
+    "TestNG.LoginTest.navigatingAndLoggingIn.executor": "Run",
+    "TestNG.PostHappyPath.verifyUserCanCreateNewPost.executor": "Run",
+    "TestNG.RegistrationTest.navigationAndRegistration.executor": "Run",
+    "TestNG.TestClass.testing.executor": "Debug",
+    "git-widget-placeholder": "FRFO",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/vbass/Downloads/TAF-master",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.RegistrationTest.navigationAndRegistration">
-    <configuration name="LoginTest.loginWhirValidCreds" type="TestNG" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="gui.regression.registration" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.PostHappyPath.verifyUserCanCreateNewPost">
+    <configuration name="EndToEndTest.verifyUserCanCreateNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.regression.login.*" />
+          <option name="PATTERN" value="gui.e2e.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="gui" />
-      <option name="MAIN_CLASS_NAME" value="gui.regression.login.LoginTest" />
-      <option name="METHOD_NAME" value="loginWhirValidCreds" />
+      <option name="PACKAGE_NAME" value="gui.e2e" />
+      <option name="MAIN_CLASS_NAME" value="gui.e2e.EndToEndTest" />
+      <option name="METHOD_NAME" value="verifyUserCanCreateNewPost" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -88,7 +104,7 @@
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.regression.login.*" />
+          <option name="PATTERN" value="gui.regression.registration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,16 +118,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostHappyPath.verifyUserCanCreateNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_4_TestNG_TAF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.regression.post.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gui.regression.post" />
+      <option name="MAIN_CLASS_NAME" value="gui.regression.post.PostHappyPath" />
+      <option name="METHOD_NAME" value="verifyUserCanCreateNewPost" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationTest.navigationAndRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.regression.login.*" />
+          <option name="PATTERN" value="gui.regression.registration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="gui.regression.login" />
-      <option name="MAIN_CLASS_NAME" value="gui.regression.login.RegistrationTest" />
+      <option name="MAIN_CLASS_NAME" value="gui.regression.registration.RegistrationTest" />
       <option name="METHOD_NAME" value="navigationAndRegistration" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -140,10 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PostHappyPath.verifyUserCanCreateNewPost" />
+        <item itemvalue="TestNG.EndToEndTest.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.RegistrationTest.navigationAndRegistration" />
         <item itemvalue="TestNG.LoginTest.navigatingAndLoggingIn" />
         <item itemvalue="TestNG.TestClass.testing" />
-        <item itemvalue="TestNG.LoginTest.loginWhirValidCreds" />
       </list>
     </recent_temporary>
   </component>
@@ -194,10 +229,23 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/gui/base/BrowserDriverFactory.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="22" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java</url>
+          <line>50</line>
+          <properties class="org.mincho.POM.LoginPage" method="loginWithUserAndPassword">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/mincho/POM/PostPage.java</url>
+          <line>44</line>
+          <properties class="org.mincho.POM.PostPage" method="getImageName">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

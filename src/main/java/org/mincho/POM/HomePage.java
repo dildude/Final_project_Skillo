@@ -36,8 +36,18 @@ public class HomePage extends ISkillo {
         waitAndClick(navigationNewPostButton);
     }
 
-    public void waitNewPostButtonToAppear(){
-        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy((By) navigationNewPostButton));
+    public boolean isNewPostButtonToShown(){
+        boolean isButtonShown = false;
+        log.info(" ACTION @ The user is verifying if the navigation New Post button is presented");
+        try {
+            wait.until(ExpectedConditions.visibilityOf(navigationLogOutButton));
+            log.info("CONFIRM # Navigation New Post button is presented to the user");
+            isButtonShown= true;
+        } catch ( TimeoutException e) {
+            log.error("ERROR ! The navigation New Post button was not presented to the user");
+            //isButtonShown = false;
+        }
+        return isButtonShown;
     }
 
     public boolean isLogOutButtonShown(){
@@ -49,7 +59,7 @@ public class HomePage extends ISkillo {
             isButtonShown= true;
         } catch ( TimeoutException e) {
             log.error("ERROR ! The navigation logout button was not presented to the user");
-            isButtonShown = false;
+            //isButtonShown = false;
         }
         return isButtonShown;
     }

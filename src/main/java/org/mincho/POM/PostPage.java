@@ -56,7 +56,7 @@ public class PostPage extends  ISkillo{
     public void providePostCaption(String caption) {
         wait.until(ExpectedConditions.visibilityOf(captionElement));
         captionElement.sendKeys(caption);
-        log.info("CONFIRMATION # The user has provided caption text :"+caption);
+        log.info("CONFIRMATION # The user has provided caption text :" + caption);
     }
 
     public void clickCreatePostButton() {

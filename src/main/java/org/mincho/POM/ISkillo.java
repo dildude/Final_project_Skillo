@@ -53,6 +53,13 @@ public class ISkillo {
         waitPageTobeFullLoaded();
     }
 
+    public boolean isUrlLoaded(String pageURL){
+        waitPageTobeFullLoaded();
+        log.info("CONFIRM # The page URL is loaded");
+        return wait.until(ExpectedConditions.urlContains(pageURL));
+    }
+
+
     public void waitPageTobeFullLoaded(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");

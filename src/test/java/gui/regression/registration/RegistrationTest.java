@@ -6,7 +6,7 @@ import org.mincho.POM.RegistrationPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class RegistrationTestHappyPath extends BaseTest {
+public class RegistrationTest extends BaseTest {
 
     @Test
     public void navigationAndRegistration(){

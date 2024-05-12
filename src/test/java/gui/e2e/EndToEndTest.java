@@ -8,15 +8,15 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
-public class NeedName extends BaseTest {
+public class EndToEndTest extends BaseTest {
     @DataProvider(name = "PostTestDataProvider")
     public Object[][] getUsers() {
-        File postPicture = new File("src\\test\\resources\\upload\\testUpload.jpg");
+        File postPicture = new File("src\\test\\resources\\upload\\testImg.jpg");
         String caption = "Testing create post caption";
 
         return new Object[][]{{
-                "testingDemos", "testing",
-                "testingDemos", postPicture, caption},
+                "Minchotest", "123456",
+                "Minchotest", postPicture, caption},
         };
     }
 
@@ -31,6 +31,7 @@ public class NeedName extends BaseTest {
         final String LOGIN_PAGE_URL = "users/login";
 
         HomePage homePage = new HomePage(driver, log);
+
 
         LoginPage loginPage = new LoginPage(driver, log);
         loginPage.navigateTo(LOGIN_PAGE_URL);
