@@ -29,4 +29,17 @@ public class PostModal extends ISkillo {
         wait.until(ExpectedConditions.visibilityOf(postUser));
         return postUser.getText();
     }
+
+
+    public void clickOnBinIcon(){
+        WebElement deletePostButton = modalElement.findElement(By.cssSelector(".delete-ask"));
+        wait.until(ExpectedConditions.visibilityOf(deletePostButton));
+        deletePostButton.click();
+    }
+    public void confirmDeletingPost(){
+        WebElement confirmDeletingPost = modalElement.findElement(By.cssSelector(".delete-confirm"));
+        wait.until(ExpectedConditions.visibilityOf(confirmDeletingPost));
+        confirmDeletingPost.click();
+    }
+
 }

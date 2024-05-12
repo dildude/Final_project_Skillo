@@ -66,5 +66,8 @@ public class PostHappyPath extends BaseTest {
         Assert.assertTrue(postModal.isImageVisible(), "The image is visible!");
         Assert.assertEquals(postModal.getPostUser(), username);
 
+        log.info("\n STEP 15: Deleting the new post so this test can be repeated");
+        postModal.clickOnBinIcon();
+        postModal.confirmDeletingPost();
     }
 }
