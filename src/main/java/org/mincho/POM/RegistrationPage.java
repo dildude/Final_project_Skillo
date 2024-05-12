@@ -82,7 +82,12 @@ public class RegistrationPage extends ISkillo{
         }
         return isPopUpMsgShown;
     }
-//TODO to make a method that checks the 
+//TODO to make a method that checks the msg's
+    /*
+    aria-label="Email taken"
+    aria-label="Registration failed!"
+    aria-label="Username taken"
+    */
 
 
 
