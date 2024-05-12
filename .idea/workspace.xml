@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="stting up the master">
-      <change beforePath="$PROJECT_DIR$/src/test/java/gui/e2e/EndToEndTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/login/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/profile/ProfileHappyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/profile/ProfileHappyPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +56,8 @@
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.Selenium_4_TestNG_TAF [clean].executor": "Run",
+    "Maven.Selenium_4_TestNG_TAF [compile].executor": "Run",
+    "Maven.Selenium_4_TestNG_TAF [test].executor": "Run",
     "Maven.Selenium_4_TestNG_TAF [validate].executor": "Run",
     "Maven.Selenium_4_TestNG_TAF [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -60,6 +66,7 @@
     "TestNG.LoginTest.loginWhirValidCreds.executor": "Run",
     "TestNG.LoginTest.navigatingAndLoggingIn.executor": "Run",
     "TestNG.PostHappyPath.verifyUserCanCreateNewPost.executor": "Run",
+    "TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture.executor": "Run",
     "TestNG.RegistrationTest.navigationAndRegistration.executor": "Run",
     "TestNG.TestClass.testing.executor": "Debug",
     "git-widget-placeholder": "FRFO",
@@ -69,11 +76,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vbass\IdeaProjects\Selenium_4_TestNG_TAF\src\test\java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="gui.regression.registration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PostHappyPath.verifyUserCanCreateNewPost">
+  <component name="RunManager" selected="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture">
     <configuration name="EndToEndTest.verifyUserCanCreateNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
@@ -128,6 +138,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProfileHappyPath.verifyUserCanUpdateProfilePicture" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_4_TestNG_TAF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.regression.profile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gui.regression.profile" />
+      <option name="MAIN_CLASS_NAME" value="gui.regression.profile.ProfileHappyPath" />
+      <option name="METHOD_NAME" value="verifyUserCanUpdateProfilePicture" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationTest.navigationAndRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
@@ -146,31 +174,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass.testing" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium_4_TestNG_TAF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gui" />
-      <option name="MAIN_CLASS_NAME" value="gui.TestClass" />
-      <option name="METHOD_NAME" value="testing" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture" />
         <item itemvalue="TestNG.PostHappyPath.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.EndToEndTest.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.RegistrationTest.navigationAndRegistration" />
         <item itemvalue="TestNG.LoginTest.navigatingAndLoggingIn" />
-        <item itemvalue="TestNG.TestClass.testing" />
       </list>
     </recent_temporary>
   </component>

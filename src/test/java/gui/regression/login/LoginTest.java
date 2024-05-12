@@ -17,24 +17,24 @@ public class LoginTest extends BaseTest {
 
             HomePage homePage = new HomePage(super.driver, log);
 
-            log.info("STEP 1: Not logged in user has open the ISkilo HomePage.");
+            log.info("\n STEP 1: Not logged in user has open the ISkilo HomePage.");
             homePage.openHomePage();
             boolean isLogOutButtonShown = homePage.isLogOutButtonShown();
             Assert.assertFalse(isLogOutButtonShown);
 
-            log.info("STEP 2: The user has navigated to ISkilo LoginPage");
+            log.info("\n STEP 2: The user has navigated to ISkilo LoginPage");
             homePage.clickOnLoginButton();
 
-            log.info("STEP 3: The user has verified that the LoginPage is open as per requirements ");
+            log.info("\n STEP 3: The user has verified that the LoginPage is open as per requirements ");
             LoginPage loginPage = new LoginPage(super.driver, log);
 
-            log.info("STEP 5: The user has provided a valid username");
+            log.info("\n STEP 5: The user has provided a valid username");
             loginPage.provideUserName(USERNAME);
 
-            log.info("STEP 6: The user has provided a valid password");
+            log.info("\n STEP 6: The user has provided a valid password");
             loginPage.providePassword(PASSWORD);
 
-            log.info("STEP 7: The user has clicked on login submit button");
+            log.info("\n STEP 7: The user has clicked on login submit button");
             loginPage.clickSubmitButton();
 
     }

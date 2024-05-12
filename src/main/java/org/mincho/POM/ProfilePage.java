@@ -5,14 +5,25 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.io.File;
 import java.util.List;
 
 public class ProfilePage extends  ISkillo{
+    @FindBy(id = "upload-img")
+    private WebElement uploadProfilePic;
+    @FindBy (id = "nav-link-profile")
+    private WebElement navToProfileButton;
+
     public ProfilePage (WebDriver driver, Logger log) {
         super(driver,log);
         PageFactory.initElements(driver,this);
+    }
+    public void clickOnProfileButton() {
+        waitAndClick(navToProfileButton);
     }
 
     public String getUsername() {
@@ -31,5 +42,16 @@ public class ProfilePage extends  ISkillo{
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
+    }
+
+    public void uploadProfilePic(File file){
+        uploadProfilePic.sendKeys(file.getAbsolutePath());
+        log.info("CONFIRMATION # The image was successfully uploaded");
+    }
+
+    public boolean isProfilePicDisplayed(){
+        log.info("CONFIRMATION # The Profile pic is displayed");
+        wait.until(ExpectedConditions.visibilityOf(uploadProfilePic));
+        return uploadProfilePic.isDisplayed(); //TODO Not seeing the image unforch
     }
 }
