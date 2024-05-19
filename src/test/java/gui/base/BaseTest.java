@@ -7,7 +7,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import java.io.File;
@@ -67,7 +66,7 @@ public class BaseTest {
         File directory = new File(directoryPath);
 
         Assert.assertTrue(directory.isDirectory(), "Invalid directory!");
-       // Assert.assertFalse(directory.isDirectory(), "Invalid directory!");
+        //Assert.assertFalse(directory.isDirectory(), "Invalid directory!");
 
         FileUtils.cleanDirectory(directory);
         String[] fileList = directory.list();

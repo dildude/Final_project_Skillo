@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="git ignore" />
+    <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="git ignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/PostModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/PostModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/e2e/EndToEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/e2e/EndToEnd.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +68,7 @@
     "TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture.executor": "Run",
     "TestNG.RegistrationTest.navigationAndRegistration.executor": "Run",
     "TestNG.TestClass.testing.executor": "Debug",
-    "git-widget-placeholder": "Merging FRFO",
+    "git-widget-placeholder": "FRFO",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/vbass/Downloads/TAF-master",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
@@ -77,7 +82,7 @@
       <recent name="gui.regression.registration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture">
+  <component name="RunManager" selected="TestNG.EndToEnd.endToEndTest">
     <configuration name="EndToEndTest.verifyUserCanCreateNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
@@ -107,6 +112,24 @@
       <option name="PACKAGE_NAME" value="gui.e2e" />
       <option name="MAIN_CLASS_NAME" value="gui.e2e.EndToEnd" />
       <option name="METHOD_NAME" value="endToEndTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.navigatingAndLoggingIn" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_4_TestNG_TAF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.regression.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gui.regression.login" />
+      <option name="MAIN_CLASS_NAME" value="gui.regression.login.LoginTest" />
+      <option name="METHOD_NAME" value="navigatingAndLoggingIn" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -150,31 +173,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.navigationAndRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium_4_TestNG_TAF" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.regression.registration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gui.regression.login" />
-      <option name="MAIN_CLASS_NAME" value="gui.regression.registration.RegistrationTest" />
-      <option name="METHOD_NAME" value="navigationAndRegistration" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture" />
         <item itemvalue="TestNG.EndToEnd.endToEndTest" />
+        <item itemvalue="TestNG.LoginTest.navigatingAndLoggingIn" />
+        <item itemvalue="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture" />
         <item itemvalue="TestNG.PostHappyPath.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.EndToEndTest.verifyUserCanCreateNewPost" />
-        <item itemvalue="TestNG.RegistrationTest.navigationAndRegistration" />
       </list>
     </recent_temporary>
   </component>
