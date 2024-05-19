@@ -33,5 +33,5 @@ And in src/test/java/gui you can find the added test cases that can be run.
 
 ## Contact
 
-Your Name - [Mincho K.](mailto:22521206+dildude@users.noreply.github.com.)
+[Mincho K.](mailto:mincho.qa.kuzmanov@gmail.com)
 Project Link: [iSkillo automation](https://github.com/dildude/Final_project_Skillo)
