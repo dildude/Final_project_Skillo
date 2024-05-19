@@ -54,6 +54,7 @@ public class ProfilePage extends  ISkillo{
     public boolean isProfilePicDisplayed(){
         log.info("CONFIRMATION # The Profile pic is displayed");
         wait.until(ExpectedConditions.visibilityOf(imgSource));
-        return uploadProfilePic.isDisplayed(); //TODO Not seeing the image unforch
+        String imgUrl = imgSource.getAttribute("src");
+        return imgUrl.contains("https://i.imgur.com");
     }
 }

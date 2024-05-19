@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="stting up the master">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/screenshots/verifyUserCanUpdateProfilePicture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/post/PostHappyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/post/PostHappyPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/profile/ProfileHappyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/profile/ProfileHappyPath.java" afterDir="false" />
-    </list>
+    <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="git ignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +63,7 @@
     "TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture.executor": "Run",
     "TestNG.RegistrationTest.navigationAndRegistration.executor": "Run",
     "TestNG.TestClass.testing.executor": "Debug",
-    "git-widget-placeholder": "FRFO",
+    "git-widget-placeholder": "Merging FRFO",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/vbass/Downloads/TAF-master",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
@@ -87,7 +77,7 @@
       <recent name="gui.regression.registration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EndToEnd.endToEndTest">
+  <component name="RunManager" selected="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture">
     <configuration name="EndToEndTest.verifyUserCanCreateNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
@@ -180,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.EndToEnd.endToEndTest" />
         <item itemvalue="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture" />
+        <item itemvalue="TestNG.EndToEnd.endToEndTest" />
         <item itemvalue="TestNG.PostHappyPath.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.EndToEndTest.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.RegistrationTest.navigationAndRegistration" />
@@ -213,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714202275637</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1716128654980</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716128654980</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +228,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new repo for the last HW" />
     <MESSAGE value="stting up the master" />
-    <option name="LAST_COMMIT_MESSAGE" value="stting up the master" />
+    <MESSAGE value="git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="git ignore" />
   </component>
 </project>
