@@ -10,22 +10,22 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.io.File;
 
-public class PostPage extends  ISkillo{
+public class PostPage extends ISkillo {
     final String POST_PAGE_URL = "http://training.skillo-bg.com:4300/posts/create";
     @FindBy(css = "img.image-preview")
     private WebElement image;
-    @FindBy (css = "input.input-lg")
+    @FindBy(css = "input.input-lg")
     private WebElement imageTextElement;
-    @FindBy (css = ".file[type='file']")
+    @FindBy(css = ".file[type='file']")
     private WebElement uploadField;
-    @FindBy (name = "caption")
+    @FindBy(name = "caption")
     private WebElement captionElement;
-    @FindBy (id = "create-post")
+    @FindBy(id = "create-post")
     private WebElement createP0ostButton;
 
-    public PostPage (WebDriver driver, Logger log) {
-        super(driver,log);
-        PageFactory.initElements(driver,this);
+    public PostPage(WebDriver driver, Logger log) {
+        super(driver, log);
+        PageFactory.initElements(driver, this);
     }
 
     public boolean isImageVisible() {
@@ -44,7 +44,7 @@ public class PostPage extends  ISkillo{
 
     public String getImageName() {
         String imageName = imageTextElement.getAttribute("placeholder");
-        log.info("CONFIRMATION # The image name is: "+ imageName);
+        log.info("CONFIRMATION # The image name is: " + imageName);
         return imageName;
     }
 

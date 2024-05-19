@@ -16,11 +16,12 @@ public class ProfileHappyPath extends BaseTest {
         File postPicture = new File("src\\test\\resources\\upload\\testProfilePic.jpg");
 
         return new Object[][]{{
-                "Minchotest", "123456", postPicture, },
+                "Minchotest", "123456", postPicture,},
         };
     }
+
     @Test(dataProvider = "PostTestDataProvider")
-    public void verifyUserCanUpdateProfilePicture (String user,String password,File file){
+    public void verifyUserCanUpdateProfilePicture(String user, String password, File file) {
         final String PROFILE_PAGE_SUFIX = "users/5622";
 
         HomePage homePage = new HomePage(driver, log);
@@ -36,14 +37,12 @@ public class ProfileHappyPath extends BaseTest {
         profilePage.clickOnProfileButton();
         log.info("\n STEP 5: Verify Username");
         String userNameTitle = profilePage.getUsername();
-        Assert.assertEquals(userNameTitle, user,"The Username is equal to the one in the title");
+        Assert.assertEquals(userNameTitle, user, "The Username is equal to the one in the title");
         log.info("\n STEP 6: Upload Profile Picture");
         profilePage.uploadProfilePic(file);
         log.info("\n STEP 7: Verifying that the image is uploaded");
         Assert.assertTrue(profilePage.isProfilePicDisplayed());
         log.info("END");
-
-
 
 
     }

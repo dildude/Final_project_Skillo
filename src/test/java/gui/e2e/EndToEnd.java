@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.io.File;
 
 public class EndToEnd extends BaseTest {
@@ -17,13 +18,13 @@ public class EndToEnd extends BaseTest {
     private WebElement usernameInputField;
     @FindBy(id = "defaultLoginFormPassword")
     private WebElement passwordInputField;
-    @FindBy (name = "username")
+    @FindBy(name = "username")
     private WebElement regUsernameField;
-    @FindBy (css = "input[placeholder='email']")
+    @FindBy(css = "input[placeholder='email']")
     private WebElement regEmailField;
-    @FindBy (id = "defaultRegisterFormPassword")
+    @FindBy(id = "defaultRegisterFormPassword")
     private WebElement regPasswordInputField;
-    @FindBy (id = "defaultRegisterPhonePassword")
+    @FindBy(id = "defaultRegisterPhonePassword")
     private WebElement regConfirmPassField;
 
 
@@ -56,7 +57,7 @@ public class EndToEnd extends BaseTest {
 //        registrationPage.isPlaceholderCorrect(regPasswordInputField,"Password");
 //        registrationPage.isPlaceholderCorrect(regConfirmPassField,"Confirm Password");
         log.info("\n STEP 4: Making a registration.");
-        registrationPage.provideAllForRegistration(NEWUSERNAME,EMAIL,REGPASSWORD,CONFIRMPASSWORD);
+        registrationPage.provideAllForRegistration(NEWUSERNAME, EMAIL, REGPASSWORD, CONFIRMPASSWORD);
         log.info("\n RESULT: The registration is successful.");
         log.info("\n STEP 5: Checking that the user is log in after registration.");
         homePage.isUrlLoaded("http://training.skillo-bg.com:4200/posts/all");
@@ -67,7 +68,7 @@ public class EndToEnd extends BaseTest {
 
         LoginPage loginPage = new LoginPage(super.driver, log);
         log.info("\n STEP 7: Verify that the user is on login page.");
-        // TODO check the place holder for log in page
+        loginPage.isLoginTitleShown();
         log.info("\n STEP 8: Checking the placeholders of the login page.");
 //        loginPage.isPlaceholderCorrect(usernameInputField ,"Username or email");
 //        loginPage.isPlaceholderCorrect(passwordInputField ,"Password");
@@ -92,7 +93,7 @@ public class EndToEnd extends BaseTest {
         log.info("\n STEP 14: Upload new post picture.");
         postPage.uploadPicture(postPicture);
         Assert.assertTrue(postPage.isImageVisible(), "The image is visible!");
-        Assert.assertEquals(postPicture.getName(), postPage.getImageName(),"The image name is correct.");
+        Assert.assertEquals(postPicture.getName(), postPage.getImageName(), "The image name is correct.");
         log.info("\n STEP 15: Enter caption.");
         postPage.providePostCaption(caption);
         log.info("\n STEP 16: Create the new post.");

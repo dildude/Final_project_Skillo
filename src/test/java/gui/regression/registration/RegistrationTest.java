@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class RegistrationTest extends BaseTest {
 
     @Test
-    public void navigationAndRegistration(){
+    public void navigationAndRegistration() {
         // need to be change before test with non existing user (i didn't find delete user)
         final String NEWUSERNAME = "TestMincho4";
         final String EMAIL = "crikigo4@yopmail.com";

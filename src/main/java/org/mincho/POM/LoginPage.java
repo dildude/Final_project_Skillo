@@ -30,19 +30,19 @@ public class LoginPage extends ISkillo {
     private WebElement popUpMsg;
 
     public LoginPage(WebDriver driver, Logger log) {
-        super(driver,log);
+        super(driver, log);
         PageFactory.initElements(driver, this);
     }
 
-    public void  provideUserName(String userName) {
-        typeTextInField(usernameInputField,userName);
+    public void provideUserName(String userName) {
+        typeTextInField(usernameInputField, userName);
     }
 
-    public void providePassword(String userPassword){
-        typeTextInField(passwordInputField,userPassword);
+    public void providePassword(String userPassword) {
+        typeTextInField(passwordInputField, userPassword);
     }
 
-    public void clickSubmitButton(){
+    public void clickSubmitButton() {
         waitAndClick(loginFormSubmitButton);
     }
 
@@ -56,18 +56,23 @@ public class LoginPage extends ISkillo {
         String expectedMsgText = "Successful login!";
         String msgText = popUpMsg.getText();
         wait.until(ExpectedConditions.visibilityOf(popUpMsg));
-        Assert.assertEquals(msgText,expectedMsgText);
+        Assert.assertEquals(msgText, expectedMsgText);
     }
 
     public void msgStatusAfterInvalidLogin() {
-        String expectedMsgText ="Wrong username or password!";
+        String expectedMsgText = "Wrong username or password!";
         String msgText = popUpMsg.getText();
         wait.until(ExpectedConditions.visibilityOf(popUpMsg));
-        Assert.assertEquals(msgText,expectedMsgText);
+        Assert.assertEquals(msgText, expectedMsgText);
     }
 
-    public void selectingRememberMeCheckBox(){
+    public void selectingRememberMeCheckBox() {
         rememberMeCheckBox.click();
         System.out.println("Remember me is selected");
     }
+
+    public boolean isLoginTitleShown() {
+        return isTitleShown(loginPageHeaderTitle);
+    }
+
 }

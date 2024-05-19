@@ -12,18 +12,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.io.File;
 import java.util.List;
 
-public class ProfilePage extends  ISkillo{
+public class ProfilePage extends ISkillo {
     @FindBy(id = "upload-img")
     private WebElement uploadProfilePic;
-    @FindBy (id = "nav-link-profile")
+    @FindBy(id = "nav-link-profile")
     private WebElement navToProfileButton;
-    @FindBy (className="profile-image-source")
+    @FindBy(className = "profile-image-source")
     private WebElement imgSource;
 
-    public ProfilePage (WebDriver driver, Logger log) {
-        super(driver,log);
-        PageFactory.initElements(driver,this);
+    public ProfilePage(WebDriver driver, Logger log) {
+        super(driver, log);
+        PageFactory.initElements(driver, this);
     }
+
     public void clickOnProfileButton() {
         waitAndClick(navToProfileButton);
     }
@@ -46,12 +47,12 @@ public class ProfilePage extends  ISkillo{
         js.executeScript("return document.readyState").equals("complete");
     }
 
-    public void uploadProfilePic(File file){
+    public void uploadProfilePic(File file) {
         uploadProfilePic.sendKeys(file.getAbsolutePath());
         log.info("CONFIRMATION # The image was successfully uploaded");
     }
 
-    public boolean isProfilePicDisplayed(){
+    public boolean isProfilePicDisplayed() {
         log.info("CONFIRMATION # The Profile pic is displayed");
         wait.until(ExpectedConditions.visibilityOf(imgSource));
         String imgUrl = imgSource.getAttribute("src");

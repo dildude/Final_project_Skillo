@@ -9,8 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class PostModal extends ISkillo {
     private final WebElement modalElement;
-    public PostModal (WebDriver driver, Logger log) {
-        super(driver,log);
+
+    public PostModal(WebDriver driver, Logger log) {
+        super(driver, log);
         this.modalElement = driver.findElement(By.className("post-modal"));
     }
 
@@ -24,6 +25,7 @@ public class PostModal extends ISkillo {
             return false;
         }
     }
+
     public String getPostUser() {
         WebElement postUser = modalElement.findElement(By.className("post-user"));
         wait.until(ExpectedConditions.visibilityOf(postUser));
@@ -31,13 +33,14 @@ public class PostModal extends ISkillo {
     }
 
 
-    public void clickOnBinIcon(){
+    public void clickOnBinIcon() {
         WebElement deletePostButton = modalElement.findElement(By.cssSelector(".delete-ask"));
         wait.until(ExpectedConditions.visibilityOf(deletePostButton));
         deletePostButton.click();
         waitPageTobeFullLoaded();
     }
-    public void confirmDeletingPost(){
+
+    public void confirmDeletingPost() {
         WebElement confirmDeletingPost = modalElement.findElement(By.cssSelector(".delete-confirm"));
         wait.until(ExpectedConditions.visibilityOf(confirmDeletingPost));
         confirmDeletingPost.click();

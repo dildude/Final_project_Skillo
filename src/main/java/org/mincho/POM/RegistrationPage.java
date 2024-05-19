@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-
 public class RegistrationPage extends ISkillo{
 
     public static final String REG_PAGE_SUFIX = "users/register";
@@ -42,18 +41,23 @@ public class RegistrationPage extends ISkillo{
     public void provideNewName(String newUserName){
         typeTextInField(regUsernameField, newUserName);
     }
+
     public void provideEmailAddress (String emailAddress){
         typeTextInField(regEmailField, emailAddress);
     }
+
     public void providePassword(String password){
         typeTextInField(regPasswordInputField, password);
     }
+
     public void provideConfermationOfThePass(String confPass){
         typeTextInField(regConfirmPassField,confPass);
     }
+
     public void clickAndSubmit(){
         waitAndClick(completeRegistration);
     }
+
     public void provideAllForRegistration(String newUserName, String emailAddress, String password, String confPass ) {
         provideNewName(newUserName);
         provideEmailAddress(emailAddress);
@@ -62,19 +66,8 @@ public class RegistrationPage extends ISkillo{
         clickAndSubmit();
     }
 
-    //TODO to move it to skillo and make it so it can be used for login page as well
     public boolean isRegistrationTitleShown(){
-        boolean isTitleShown = false;
-        log.info(" ACTION @ The user is verifying if the Registration title is shown");
-        try {
-            wait.until(ExpectedConditions.visibilityOf(registrationPageHeaderTitle));
-            log.info("CONFIRM # The Registration title is shown to the user");
-            isTitleShown = true;
-        }catch (NoSuchElementException e){
-            log.error("ERROR ! The title is not presented the user is not on Registration page");
-            isTitleShown = false;
-        }
-        return  isTitleShown;
+        return isTitleShown(registrationPageHeaderTitle);
     }
 
     public boolean isPopUpMsgShown(){

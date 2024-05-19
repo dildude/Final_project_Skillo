@@ -5,6 +5,7 @@ import org.mincho.POM.*;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import java.io.File;
 
 public class PostHappyPath extends BaseTest {
@@ -20,7 +21,7 @@ public class PostHappyPath extends BaseTest {
     }
 
     @Test(dataProvider = "PostTestDataProvider")
-    public void verifyUserCanCreateNewPost(String user,String password,String username,File file,String caption) {
+    public void verifyUserCanCreateNewPost(String user, String password, String username, File file, String caption) {
         final String HOME_PAGE_URL = "posts/all";
         final String LOGIN_PAGE_URL = "users/login";
 
@@ -48,7 +49,7 @@ public class PostHappyPath extends BaseTest {
         log.info("\n STEP 8: Checking if the image is visible after upload");
         Assert.assertTrue(postPage.isImageVisible(), "The image is visible!");
         log.info("\n STEP 9: Checking if the image name is correct");
-        Assert.assertEquals(file.getName(), postPage.getImageName(),"The image name is correct");
+        Assert.assertEquals(file.getName(), postPage.getImageName(), "The image name is correct");
         log.info("\n STEP 10: Provide caption for the new image");
         postPage.providePostCaption(caption);
         log.info("\n STEP 11: Click on Create Button to create the new post");

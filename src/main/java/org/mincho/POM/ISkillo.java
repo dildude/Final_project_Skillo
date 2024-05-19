@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
 public class ISkillo {
@@ -30,10 +31,9 @@ public class ISkillo {
         log.info("The user has clicked on element{}", element);
 
         waitPageTobeFullLoaded();
-
     }
 
-    public void typeTextInField(WebElement element, String inputText){
+    public void typeTextInField(WebElement element, String inputText) {
         wait.until(ExpectedConditions.visibilityOf(element));
 
         element.clear();
@@ -42,7 +42,7 @@ public class ISkillo {
         waitPageTobeFullLoaded();
     }
 
-    public void navigateTo(String pageURLsufix){
+    public void navigateTo(String pageURLsufix) {
         String currentURL = BASE_URL + pageURLsufix;
 
         driver.get(currentURL);
@@ -51,35 +51,49 @@ public class ISkillo {
         waitPageTobeFullLoaded();
     }
 
-    public boolean isUrlLoaded(String pageURL){
+    public boolean isUrlLoaded(String pageURL) {
         waitPageTobeFullLoaded();
         log.info("CONFIRM # The page URL is loaded");
+
         return wait.until(ExpectedConditions.urlContains(pageURL));
     }
 
 
-    public void waitPageTobeFullLoaded(){
+    public void waitPageTobeFullLoaded() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
         log.info("DOM tree is fully loaded");
     }
 
-    // Method to get the placeholder attribute of a web element
     public String getPlaceholder(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
+
         return element.getAttribute("placeholder");
     }
 
-    // Method to check if the placeholder is correct for a single element
     public boolean isPlaceholderCorrect(WebElement element, String expectedPlaceholder) {
         try {
             String actualPlaceholder = getPlaceholder(element);
+
             return expectedPlaceholder.equals(actualPlaceholder);
         } catch (NoSuchElementException e) {
             log.error("ERROR! The placeholder for the element is not correct or element is not found.", e);
+
             return false;
         }
     }
 
+    public boolean isTitleShown(WebElement element) {
+        boolean isTitleShown = false;
+        log.info(" ACTION @ The user is verifying if the Registration title is shown");
+        try {
+            wait.until(ExpectedConditions.visibilityOf(element));
+            log.info("CONFIRM # The Registration title is shown to the user");
+            isTitleShown = true;
+        } catch (NoSuchElementException e) {
+            log.error("ERROR ! The title is not presented the user is not on Registration page");
+        }
+        return isTitleShown;
+    }
 
 }
