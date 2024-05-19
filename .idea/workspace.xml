@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="stting up the master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/screenshots/verifyUserCanUpdateProfilePicture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/post/PostHappyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/post/PostHappyPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/screenshots/endToEndTest.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/profile/ProfileHappyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/profile/ProfileHappyPath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,30 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.Selenium_4_TestNG_TAF [clean].executor": "Run",
-    "Maven.Selenium_4_TestNG_TAF [compile].executor": "Run",
-    "Maven.Selenium_4_TestNG_TAF [test].executor": "Run",
-    "Maven.Selenium_4_TestNG_TAF [validate].executor": "Run",
-    "Maven.Selenium_4_TestNG_TAF [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.EndToEnd.endToEndTest.executor": "Run",
-    "TestNG.EndToEndTest.verifyUserCanCreateNewPost.executor": "Run",
-    "TestNG.LoginTest.loginWhirValidCreds.executor": "Run",
-    "TestNG.LoginTest.navigatingAndLoggingIn.executor": "Run",
-    "TestNG.PostHappyPath.verifyUserCanCreateNewPost.executor": "Run",
-    "TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture.executor": "Run",
-    "TestNG.RegistrationTest.navigationAndRegistration.executor": "Run",
-    "TestNG.TestClass.testing.executor": "Debug",
-    "git-widget-placeholder": "FRFO",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vbass/Downloads/TAF-master",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Selenium_4_TestNG_TAF [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Selenium_4_TestNG_TAF [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Selenium_4_TestNG_TAF [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Selenium_4_TestNG_TAF [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Selenium_4_TestNG_TAF [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.EndToEnd.endToEndTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EndToEndTest.verifyUserCanCreateNewPost.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginWhirValidCreds.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.navigatingAndLoggingIn.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PostHappyPath.verifyUserCanCreateNewPost.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegistrationTest.navigationAndRegistration.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestClass.testing.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;FRFO&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vbass/Downloads/TAF-master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vbass\IdeaProjects\Selenium_4_TestNG_TAF\src\test\java" />
@@ -87,7 +82,7 @@
       <recent name="gui.regression.registration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EndToEnd.endToEndTest">
+  <component name="RunManager" selected="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture">
     <configuration name="EndToEndTest.verifyUserCanCreateNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
@@ -180,8 +175,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.EndToEnd.endToEndTest" />
         <item itemvalue="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture" />
+        <item itemvalue="TestNG.EndToEnd.endToEndTest" />
         <item itemvalue="TestNG.PostHappyPath.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.EndToEndTest.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.RegistrationTest.navigationAndRegistration" />
