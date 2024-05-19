@@ -8,7 +8,10 @@
 - [Contact](#contact)
 
 ## Overview
-In this project I'm developing test suits for - ![This website](http://training.skillo-bg.com:4200/users/register)
+In this project I'm developing test suits for - <a href="http://training.skillo-bg.com:4200/">
+<img alt="This website" height="50" src="http://training.skillo-bg.com:4200/assets/Iskillo-logo.png" width="150"/>
+</a>
+
 
 
 ## Development so far
@@ -29,9 +32,10 @@ git clone https://github.com/dildude/Final_project_Skillo.git
 ## Usage
 
 After cloning the repository run with IDE of your liking.
-And in https://github.com/dildude/Final_project_Skillo/blob/70b17fd44b460e511554523fc21e21ba6700457c/src/test/java/gui you can find the added test cases that can be run.
+And in src/test/java/gui you can find the added test cases that can be run.
 
 ## Contact
 
-Your Name - [Mincho K.](mailto:22521206+dildude@users.noreply.github.com.)
-Project Link: [iSkillo automation](https://github.com/dildude/Final_project_Skillo)
+- [Mincho K.](mailto:mincho.qa.kuzmanov@gmail.com)
+- Project Link: [iSkillo automation](https://github.com/dildude/Final_project_Skillo)
+- [LinkedIn](https://www.linkedin.com/in/mincho-k-1997b212a/)
