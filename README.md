@@ -29,7 +29,7 @@ git clone https://github.com/dildude/Final_project_Skillo.git
 ## Usage
 
 After cloning the repository run with IDE of your liking.
-And in https://github.com/dildude/Final_project_Skillo/blob/70b17fd44b460e511554523fc21e21ba6700457c/src/test/java/gui you can find the added test cases that can be run.
+And in src/test/java/gui you can find the added test cases that can be run.
 
 ## Contact
 
