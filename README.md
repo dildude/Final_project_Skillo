@@ -8,7 +8,10 @@
 - [Contact](#contact)
 
 ## Overview
-In this project I'm developing test suits for - <img alt="This website" height="50" src="http://training.skillo-bg.com:4200/assets/Iskillo-logo.png" width="100"/>
+In this project I'm developing test suits for - <a href="http://training.skillo-bg.com:4200/">
+<img alt="This website" height="50" src="http://training.skillo-bg.com:4200/assets/Iskillo-logo.png" width="150"/>
+</a>
+
 
 
 ## Development so far
