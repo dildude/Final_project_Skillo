@@ -16,13 +16,13 @@ public class RegistrationPage extends ISkillo{
     @FindBy (css = ".text-center.mb-4")
     private WebElement  registrationPageHeaderTitle;
     @FindBy (name = "username")
-    private WebElement usernameField;
+    private WebElement regUsernameField;
     @FindBy (css = "input[placeholder='email']")
-    private WebElement emailField;
+    private WebElement regEmailField;
     @FindBy (id = "defaultRegisterFormPassword")
-    private WebElement passwordInputField;
+    private WebElement regPasswordInputField;
     @FindBy (id = "defaultRegisterPhonePassword")
-    private WebElement confermPassField;
+    private WebElement regConfirmPassField;
     @FindBy (id = "sign-in-button")
     private WebElement completeRegistration;
     @FindBy(xpath = "//div[@class=\"toast-message ng-star-inserted\"]") // ?? not sure if thats the xpath
@@ -40,21 +40,29 @@ public class RegistrationPage extends ISkillo{
     }
 
     public void provideNewName(String newUserName){
-        typeTextInField(usernameField, newUserName);
+        typeTextInField(regUsernameField, newUserName);
     }
     public void provideEmailAddress (String emailAddress){
-        typeTextInField(emailField, emailAddress);
+        typeTextInField(regEmailField, emailAddress);
     }
     public void providePassword(String password){
-        typeTextInField(passwordInputField, password);
+        typeTextInField(regPasswordInputField, password);
     }
     public void provideConfermationOfThePass(String confPass){
-        typeTextInField(confermPassField,confPass);
+        typeTextInField(regConfirmPassField,confPass);
     }
     public void clickAndSubmit(){
         waitAndClick(completeRegistration);
     }
+    public void provideAllForRegistration(String newUserName, String emailAddress, String password, String confPass ) {
+        provideNewName(newUserName);
+        provideEmailAddress(emailAddress);
+        providePassword(password);
+        provideConfermationOfThePass(confPass);
+        clickAndSubmit();
+    }
 
+    //TODO to move it to skillo and make it so it can be used for login page as well
     public boolean isRegistrationTitleShown(){
         boolean isTitleShown = false;
         log.info(" ACTION @ The user is verifying if the Registration title is shown");

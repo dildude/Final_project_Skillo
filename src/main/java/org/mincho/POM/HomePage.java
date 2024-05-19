@@ -35,12 +35,15 @@ public class HomePage extends ISkillo {
     public void clickOnNewPostButton(){
         waitAndClick(navigationNewPostButton);
     }
+    public void clickOnLogOutButton(){
+        waitAndClick(navigationLogOutButton);
+    }
 
     public boolean isNewPostButtonToShown(){
         boolean isButtonShown = false;
         log.info(" ACTION @ The user is verifying if the navigation New Post button is presented");
         try {
-            wait.until(ExpectedConditions.visibilityOf(navigationLogOutButton));
+            wait.until(ExpectedConditions.visibilityOf(navigationNewPostButton));
             log.info("CONFIRM # Navigation New Post button is presented to the user");
             isButtonShown= true;
         } catch ( TimeoutException e) {

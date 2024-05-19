@@ -17,6 +17,8 @@ public class ProfilePage extends  ISkillo{
     private WebElement uploadProfilePic;
     @FindBy (id = "nav-link-profile")
     private WebElement navToProfileButton;
+    @FindBy (className="profile-image-source")
+    private WebElement imgSource;
 
     public ProfilePage (WebDriver driver, Logger log) {
         super(driver,log);
@@ -51,7 +53,7 @@ public class ProfilePage extends  ISkillo{
 
     public boolean isProfilePicDisplayed(){
         log.info("CONFIRMATION # The Profile pic is displayed");
-        wait.until(ExpectedConditions.visibilityOf(uploadProfilePic));
+        wait.until(ExpectedConditions.visibilityOf(imgSource));
         return uploadProfilePic.isDisplayed(); //TODO Not seeing the image unforch
     }
 }

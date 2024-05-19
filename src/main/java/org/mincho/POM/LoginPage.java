@@ -1,7 +1,6 @@
 package org.mincho.POM;
 
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,7 +29,6 @@ public class LoginPage extends ISkillo {
     @FindBy(xpath = "//div[@class=\"toast-message ng-star-inserted\"]")
     private WebElement popUpMsg;
 
-    //Create a constructor
     public LoginPage(WebDriver driver, Logger log) {
         super(driver,log);
         PageFactory.initElements(driver, this);
@@ -54,42 +52,22 @@ public class LoginPage extends ISkillo {
         clickSubmitButton();
     }
 
-    public  String getUserNamePlaceHolder () {
-        wait.until(ExpectedConditions.visibilityOf(usernameInputField));
-        return usernameInputField.getAttribute("value");
-    }
-
-    //TODO да видя трябва ли ми този метод
-    public boolean isUserNamePlaceHolderCorrect(String expectedUserNamePlaceHolder) {
-        boolean isPerRequirements = false;
-        try {
-            String actualUserNamePlaceHolder = getUserNamePlaceHolder();
-            isPerRequirements = expectedUserNamePlaceHolder.equals(actualUserNamePlaceHolder);
-
-        }catch (NoSuchElementException e){
-            log.error("ERROR ! The username placeHolder is not correct");
-            isPerRequirements = false;
-        }
-        return isPerRequirements;
-    }
-
-    // TODO Да влезнат 2та метода в теста
     public void msgStatusAfterSubmitSuccessfulLogin() {
         String expectedMsgText = "Successful login!";
         String msgText = popUpMsg.getText();
+        wait.until(ExpectedConditions.visibilityOf(popUpMsg));
         Assert.assertEquals(msgText,expectedMsgText);
     }
+
     public void msgStatusAfterInvalidLogin() {
         String expectedMsgText ="Wrong username or password!";
         String msgText = popUpMsg.getText();
+        wait.until(ExpectedConditions.visibilityOf(popUpMsg));
         Assert.assertEquals(msgText,expectedMsgText);
     }
-    //TODO да направя 2ри тест с включен този метод
+
     public void selectingRememberMeCheckBox(){
         rememberMeCheckBox.click();
         System.out.println("Remember me is selected");
     }
-
-
-
 }

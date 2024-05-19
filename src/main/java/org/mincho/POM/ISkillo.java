@@ -2,13 +2,12 @@ package org.mincho.POM;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
 
 public class ISkillo {
 
@@ -16,7 +15,6 @@ public class ISkillo {
     WebDriver driver;
     WebDriverWait wait;
     Logger log;
-
 
     public ISkillo(WebDriver driver, Logger log) {
         this.driver = driver;
@@ -29,7 +27,7 @@ public class ISkillo {
         wait.until(ExpectedConditions.elementToBeClickable(element));
 
         element.click();
-        log.info("The user has clicked on element" + element);
+        log.info("The user has clicked on element{}", element);
 
         waitPageTobeFullLoaded();
 
@@ -48,7 +46,7 @@ public class ISkillo {
         String currentURL = BASE_URL + pageURLsufix;
 
         driver.get(currentURL);
-        log.info("CONFIRM # The user has navigating to : " +currentURL);
+        log.info("CONFIRM # The user has navigating to : {}", currentURL);
 
         waitPageTobeFullLoaded();
     }
@@ -65,5 +63,23 @@ public class ISkillo {
         js.executeScript("return document.readyState").equals("complete");
         log.info("DOM tree is fully loaded");
     }
+
+    // Method to get the placeholder attribute of a web element
+    public String getPlaceholder(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        return element.getAttribute("placeholder");
+    }
+
+    // Method to check if the placeholder is correct for a single element
+    public boolean isPlaceholderCorrect(WebElement element, String expectedPlaceholder) {
+        try {
+            String actualPlaceholder = getPlaceholder(element);
+            return expectedPlaceholder.equals(actualPlaceholder);
+        } catch (NoSuchElementException e) {
+            log.error("ERROR! The placeholder for the element is not correct or element is not found.", e);
+            return false;
+        }
+    }
+
 
 }

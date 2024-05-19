@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="stting up the master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/login/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/screenshots/verifyUserCanUpdateProfilePicture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/post/PostHappyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/post/PostHappyPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/profile/ProfileHappyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/profile/ProfileHappyPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +65,7 @@
     "Maven.Selenium_4_TestNG_TAF [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.EndToEnd.endToEndTest.executor": "Run",
     "TestNG.EndToEndTest.verifyUserCanCreateNewPost.executor": "Run",
     "TestNG.LoginTest.loginWhirValidCreds.executor": "Run",
     "TestNG.LoginTest.navigatingAndLoggingIn.executor": "Run",
@@ -83,7 +87,7 @@
       <recent name="gui.regression.registration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture">
+  <component name="RunManager" selected="TestNG.EndToEnd.endToEndTest">
     <configuration name="EndToEndTest.verifyUserCanCreateNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
@@ -102,17 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.navigatingAndLoggingIn" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EndToEnd.endToEndTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.regression.registration.*" />
+          <option name="PATTERN" value="gui.e2e.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="gui.regression" />
-      <option name="MAIN_CLASS_NAME" value="gui.regression.login.LoginTest" />
-      <option name="METHOD_NAME" value="navigatingAndLoggingIn" />
+      <option name="PACKAGE_NAME" value="gui.e2e" />
+      <option name="MAIN_CLASS_NAME" value="gui.e2e.EndToEnd" />
+      <option name="METHOD_NAME" value="endToEndTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -176,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EndToEnd.endToEndTest" />
         <item itemvalue="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture" />
         <item itemvalue="TestNG.PostHappyPath.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.EndToEndTest.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.RegistrationTest.navigationAndRegistration" />
-        <item itemvalue="TestNG.LoginTest.navigatingAndLoggingIn" />
       </list>
     </recent_temporary>
   </component>
