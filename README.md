@@ -8,7 +8,7 @@
 - [Contact](#contact)
 
 ## Overview
-In this project I'm developing test suits for - ![This website](http://training.skillo-bg.com:4200/users/register)
+In this project I'm developing test suits for - <img alt="This website" height="50" src="http://training.skillo-bg.com:4200/assets/Iskillo-logo.png" width="100"/>
 
 
 ## Development so far
@@ -33,5 +33,6 @@ And in src/test/java/gui you can find the added test cases that can be run.
 
 ## Contact
 
-[Mincho K.](mailto:mincho.qa.kuzmanov@gmail.com)
-Project Link: [iSkillo automation](https://github.com/dildude/Final_project_Skillo)
+- [Mincho K.](mailto:mincho.qa.kuzmanov@gmail.com)
+- Project Link: [iSkillo automation](https://github.com/dildude/Final_project_Skillo)
+- [LinkedIn](https://www.linkedin.com/in/mincho-k-1997b212a/)
