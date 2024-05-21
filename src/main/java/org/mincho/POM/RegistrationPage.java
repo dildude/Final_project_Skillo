@@ -13,17 +13,17 @@ public class RegistrationPage extends ISkillo{
     public static final String REG_PAGE_SUFIX = "users/register";
 
     @FindBy (css = ".text-center.mb-4")
-    private WebElement  registrationPageHeaderTitle;
+    public WebElement  registrationPageHeaderTitle;
     @FindBy (name = "username")
-    private WebElement regUsernameField;
+    public WebElement regUsernameField;
     @FindBy (css = "input[placeholder='email']")
-    private WebElement regEmailField;
+    public WebElement regEmailField;
     @FindBy (id = "defaultRegisterFormPassword")
-    private WebElement regPasswordInputField;
+    public WebElement regPasswordInputField;
     @FindBy (id = "defaultRegisterPhonePassword")
-    private WebElement regConfirmPassField;
+    public WebElement regConfirmPassField;
     @FindBy (id = "sign-in-button")
-    private WebElement completeRegistration;
+    public WebElement completeRegistration;
     @FindBy(xpath = "//div[@class=\"toast-message ng-star-inserted\"]") // ?? not sure if thats the xpath
     private WebElement popUpMsg;
 

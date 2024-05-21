@@ -13,21 +13,21 @@ public class LoginPage extends ISkillo {
     public static final String LOGIN_PAGE_SUFIX = "users/login";
 
     @FindBy(css = "p.h4")
-    private WebElement loginPageHeaderTitle;
+    public WebElement loginPageHeaderTitle;
     @FindBy(name = "usernameOrEmail")
-    private WebElement usernameInputField;
+    public WebElement usernameInputField;
     @FindBy(id = "defaultLoginFormPassword")
-    private WebElement passwordInputField;
+    public WebElement passwordInputField;
     @FindBy(xpath = "//span[contains(text(),'Remember me')]")
-    private WebElement rememberMeLabelText;
+    public WebElement rememberMeLabelText;
     @FindBy(xpath = "//input[contains(@formcontrolname,'rememberMe')]")
-    private WebElement rememberMeCheckBox;
+    public WebElement rememberMeCheckBox;
     @FindBy(id = "sign-in-button")
-    private WebElement loginFormSubmitButton;
+    public WebElement loginFormSubmitButton;
     @FindBy(xpath = "//a[contains(.,'Register')]")
-    private WebElement loginFormRegistrationLink;
+    public WebElement loginFormRegistrationLink;
     @FindBy(xpath = "//div[@class=\"toast-message ng-star-inserted\"]")
-    private WebElement popUpMsg;
+    public WebElement popUpMsg;
 
     public LoginPage(WebDriver driver, Logger log) {
         super(driver, log);

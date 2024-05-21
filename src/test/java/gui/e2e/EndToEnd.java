@@ -4,6 +4,7 @@ import gui.base.BaseTest;
 import org.mincho.POM.*;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,19 +14,6 @@ public class EndToEnd extends BaseTest {
 
     File postPicture = new File("src\\test\\resources\\upload\\testImg.jpg");
     String caption = "Testing create post caption";
-
-    @FindBy(name = "usernameOrEmail")
-    private WebElement usernameInputField;
-    @FindBy(id = "defaultLoginFormPassword")
-    private WebElement passwordInputField;
-    @FindBy(name = "username")
-    private WebElement regUsernameField;
-    @FindBy(css = "input[placeholder='email']")
-    private WebElement regEmailField;
-    @FindBy(id = "defaultRegisterFormPassword")
-    private WebElement regPasswordInputField;
-    @FindBy(id = "defaultRegisterPhonePassword")
-    private WebElement regConfirmPassField;
 
 
     @Test
@@ -50,12 +38,10 @@ public class EndToEnd extends BaseTest {
         registrationPage.isRegistrationTitleShown();
         log.info("\n RESULT: The Page is open and title is visible.");
         log.info("\n STEP 3: Checking the place holders of the fields");
-//        boolean isUsernamePlaceholderCorrect = registrationPage.isPlaceholderCorrect(regUsernameField,"Username");
-//        Assert.assertTrue(isUsernamePlaceholderCorrect);
-//        registrationPage.isPlaceholderCorrect(regUsernameField,"Username");
-//        registrationPage.isPlaceholderCorrect(regEmailField,"email");
-//        registrationPage.isPlaceholderCorrect(regPasswordInputField,"Password");
-//        registrationPage.isPlaceholderCorrect(regConfirmPassField,"Confirm Password");
+        registrationPage.isPlaceholderCorrect(registrationPage.regUsernameField, "Username");
+        registrationPage.isPlaceholderCorrect(registrationPage.regEmailField,"email");
+        registrationPage.isPlaceholderCorrect(registrationPage.regPasswordInputField,"Password");
+        registrationPage.isPlaceholderCorrect(registrationPage.regConfirmPassField,"Confirm Password");
         log.info("\n STEP 4: Making a registration.");
         registrationPage.provideAllForRegistration(NEWUSERNAME, EMAIL, REGPASSWORD, CONFIRMPASSWORD);
         log.info("\n RESULT: The registration is successful.");
@@ -70,8 +56,8 @@ public class EndToEnd extends BaseTest {
         log.info("\n STEP 7: Verify that the user is on login page.");
         loginPage.isLoginTitleShown();
         log.info("\n STEP 8: Checking the placeholders of the login page.");
-//        loginPage.isPlaceholderCorrect(usernameInputField ,"Username or email");
-//        loginPage.isPlaceholderCorrect(passwordInputField ,"Password");
+        loginPage.isPlaceholderCorrect(loginPage.usernameInputField ,"Username or email");
+        loginPage.isPlaceholderCorrect(loginPage.passwordInputField ,"Password");
         log.info("\n RESULT: The placeholders are correct.");
         log.info("\n STEP 9: Marking the \"remember me\" check box.");
         loginPage.selectingRememberMeCheckBox();
