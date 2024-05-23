@@ -2,9 +2,10 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Development so far](#developmentsofar)
+- [Development so far](#development-so-far)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Bug report](#bug-report)
 - [Contact](#contact)
 
 ## Overview
@@ -35,7 +36,7 @@ After cloning the repository run with IDE of your liking.
 And in src/test/java/gui you can find the added test cases that can be run.
 
 ## Bug report
-If you find any bugs that you want to report, please do so here
+If you find any bugs that you want to report, please do so <a href="https://github.com/dildude/Final_project_Skillo/issues/new">here</a>
 
 ## Contact
 
