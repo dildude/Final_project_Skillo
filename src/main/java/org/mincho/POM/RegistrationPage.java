@@ -24,7 +24,7 @@ public class RegistrationPage extends ISkillo{
     public WebElement regConfirmPassField;
     @FindBy (id = "sign-in-button")
     public WebElement completeRegistration;
-    @FindBy(xpath = "//div[@class=\"toast-message ng-star-inserted\"]") // ?? not sure if thats the xpath
+    @FindBy(xpath = "//div[@class=\"toast-message ng-star-inserted\"]")
     private WebElement popUpMsg;
 
 
@@ -50,7 +50,7 @@ public class RegistrationPage extends ISkillo{
         typeTextInField(regPasswordInputField, password);
     }
 
-    public void provideConfermationOfThePass(String confPass){
+    public void provideConfirmationOfThePass(String confPass){
         typeTextInField(regConfirmPassField,confPass);
     }
 
@@ -62,7 +62,7 @@ public class RegistrationPage extends ISkillo{
         provideNewName(newUserName);
         provideEmailAddress(emailAddress);
         providePassword(password);
-        provideConfermationOfThePass(confPass);
+        provideConfirmationOfThePass(confPass);
         clickAndSubmit();
     }
 
@@ -79,17 +79,17 @@ public class RegistrationPage extends ISkillo{
             isPopUpMsgShown = true;
         }catch (NoSuchElementException e){
             log.error("ERROR ! The pop up message is not presented");
-            isPopUpMsgShown = false;
         }
         return isPopUpMsgShown;
     }
+
+
+
 //TODO to make a method that checks the msg's
     /*
     aria-label="Email taken"
     aria-label="Registration failed!"
     aria-label="Username taken"
     */
-
-
 
 }

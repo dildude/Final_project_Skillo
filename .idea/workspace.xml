@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="git ignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/ISkillo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mincho/POM/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gui/e2e/EndToEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/e2e/EndToEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
     "TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture.executor": "Run",
     "TestNG.RegistrationTest.navigationAndRegistration.executor": "Run",
     "TestNG.TestClass.testing.executor": "Debug",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "FRFO",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Projects/Final_project_Skillo",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"

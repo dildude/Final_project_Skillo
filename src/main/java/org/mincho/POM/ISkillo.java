@@ -35,7 +35,6 @@ public class ISkillo {
 
     public void typeTextInField(WebElement element, String inputText) {
         wait.until(ExpectedConditions.visibilityOf(element));
-
         element.clear();
         element.sendKeys(inputText);
 
@@ -44,7 +43,6 @@ public class ISkillo {
 
     public void navigateTo(String pageURLsufix) {
         String currentURL = BASE_URL + pageURLsufix;
-
         driver.get(currentURL);
         log.info("CONFIRM # The user has navigating to : {}", currentURL);
 
@@ -74,7 +72,6 @@ public class ISkillo {
     public boolean isPlaceholderCorrect(WebElement element, String expectedPlaceholder) {
         try {
             String actualPlaceholder = getPlaceholder(element);
-
             return expectedPlaceholder.equals(actualPlaceholder);
         } catch (NoSuchElementException e) {
             log.error("ERROR! The placeholder for the element is not correct or element is not found.", e);

@@ -27,7 +27,7 @@ public class RegistrationTest extends BaseTest {
         registrationPage.provideNewName(NEWUSERNAME);
         registrationPage.provideEmailAddress(EMAIL);
         registrationPage.providePassword(PASSWORD);
-        registrationPage.provideConfermationOfThePass(CONFIRMPASSWORD);
+        registrationPage.provideConfirmationOfThePass(CONFIRMPASSWORD);
 
         log.info("\n STEP 3: Click nad submit the registration form");
         registrationPage.clickAndSubmit();

@@ -2,9 +2,6 @@ package gui.e2e;
 
 import gui.base.BaseTest;
 import org.mincho.POM.*;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,8 +16,8 @@ public class EndToEnd extends BaseTest {
     @Test
     public void endToEndTest() {
 
-        final String NEWUSERNAME = "TestMincho8";
-        final String EMAIL = "crikigo8@yopmail.com";
+        final String NEWUSERNAME = "TestMincho9";
+        final String EMAIL = "crikigo9@yopmail.com";
         final String REGPASSWORD = "123456";
         final String CONFIRMPASSWORD = "123456";
 

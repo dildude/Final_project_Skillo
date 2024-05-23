@@ -3,14 +3,14 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/vbass/IdeaProjects/Selenium_4_TestNG_TAF">
         <classes>
+            <class name="gui.e2e.EndToEnd">
+                <methods>
+                    <include name="endToEndTest"/>
+                </methods>
+            </class>
             <class name="gui.regression.login.LoginTest">
                 <methods>
                     <include name="navigatingAndLoggingIn"/>
-                </methods>
-            </class>
-            <class name="gui.regression.registration.RegistrationTest">
-                <methods>
-                    <include name="navigationAndRegistration"/>
                 </methods>
             </class>
             <class name="gui.regression.post.PostHappyPath">
@@ -21,6 +21,11 @@
             <class name="gui.regression.profile.ProfileHappyPath">
                 <methods>
                     <include name="verifyUserCanUpdateProfilePicture"/>
+                </methods>
+            </class>
+            <class name="gui.regression.registration.RegistrationTest">
+                <methods>
+                    <include name="navigationAndRegistration"/>
                 </methods>
             </class>
         </classes>
