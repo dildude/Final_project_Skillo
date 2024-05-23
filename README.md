@@ -8,7 +8,7 @@
 - [Contact](#contact)
 
 ## Overview
-In this project I'm developing test suits for - <a href="http://training.skillo-bg.com:4200/">
+In this project I'm developing Automated test suits for - <a href="http://training.skillo-bg.com:4200/">
 <img alt="This website" height="50" src="http://training.skillo-bg.com:4200/assets/Iskillo-logo.png" width="150"/>
 </a>
 
@@ -20,7 +20,7 @@ List of the test cases.
 - Registration (Happy path)
 - New post (Happy path)
 - Profile (Happy path)
-- End to End test (Happy path)
+- End-to-End test (Happy path)
 
 ## Installation
 
@@ -33,6 +33,9 @@ git clone https://github.com/dildude/Final_project_Skillo.git
 
 After cloning the repository run with IDE of your liking.
 And in src/test/java/gui you can find the added test cases that can be run.
+
+## Bug report
+If you find any bugs that you want to report, please do so here
 
 ## Contact
 
