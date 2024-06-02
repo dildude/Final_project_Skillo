@@ -11,7 +11,7 @@ public class RegistrationTest extends BaseTest {
     @Test
     public void navigationAndRegistration() {
         // need to be change before test with non existing user (i didn't find delete user)
-        final String NEWUSERNAME = "TestMincho4";
+        final String NEWUSERNAME = "TestMincho11";
         final String EMAIL = "crikigo4@yopmail.com";
         final String PASSWORD = "123456";
         final String CONFIRMPASSWORD = "123456";

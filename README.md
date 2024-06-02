@@ -1,45 +1,87 @@
-# Automating iSkillo website
+<img align="right" src="skilloLogo.png" alt="Skilo Academy Logo" />
 
-## Table of Contents
-- [Overview](#overview)
-- [Development so far](#development-so-far)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Bug report](#bug-report)
-- [Contact](#contact)
 
-## Overview
-In this project I'm developing Automated test suits for - <a href="http://training.skillo-bg.com:4200/">
+<div align="center">
+
+# Test automation framework
+</div>
+
+## TABLE OF CONTENTS
+
+[I. INTRODUCTION](#i-introduction)
+
+[II. QA TEAM MEMBERS](#ii-qa-team-members)
+
+[III. DELIVERABLES](#iii-deliverables)
+
+[IV. USEFUL LINKS](#iv-useful-links)
+
+[V. HOW TO RUN AUTOMATIONS](#v-how-to-run-automations)
+
+
+
+## I. INTRODUCTION
+
+<a href="http://training.skillo-bg.com:4200/">
 <img alt="This website" height="50" src="http://training.skillo-bg.com:4200/assets/Iskillo-logo.png" width="150"/>
-</a>
+</a> is a web application that allows you to connect and communicate with other people. It enables you to:
+
+- connect with other Iskilo platform user by managing connection requests;
+- manage your profile information;
+- form discussions by creating, commenting and liking posts;
+- get a feed of the newest/most relevant posts from people in the network.
 
 
+## II. QA TEAM MEMBERS
 
-## Development so far
-List of the test cases.
+### QA Team:
+Mincho Kuzmanov <br />
+Nikolay Nikolov - supervision
+
+## III. DELIVERABLES
+1. [Master Test Plan v3.0]( )
+2. [CloudBaseStorage at GoogleDrive]( add link here) <br />
+2.1 [Test cases]()
 - Log in (Happy path)
 - Registration (Happy path)
 - New post (Happy path)
 - Profile (Happy path)
 - End-to-End test (Happy path)
+3. [UI Automation With Selenium And Java]( )
+4. [UI Summary Report]( )
 
-## Installation
+## IV. USEFUL LINKS
+1. DEV Project 
+2. Bug Tracking System
+3. Full QA Documentation 
+4. Manual Test Runs
+5. Automation Test Runs
 
-- Clone the repository
-git clone https://github.com/dildude/Final_project_Skillo.git
-- Make sure you have JAVA version 14 and up
-- Make sure you have Maven version 7 and up
+## V. HOW TO RUN AUTOMATIONS
 
-## Usage
+### __1. Pre-requisites for running automations__
 
-After cloning the repository run with IDE of your liking.
-And in src/test/java/gui you can find the added test cases that can be run.
+To be able to run the project on localhost and run the test automations, the following programs need to be present on your machine:
 
-## Bug report
-If you find any bugs that you want to report, please do so <a href="https://github.com/dildude/Final_project_Skillo/issues/new">here</a>
+- Windows 11 operating system / MAC OS
+- OPEN JDK 14
+- IntelliJ IDEA Ultimate Edition 2023.1.3 or later
+- MAVEN Command Line
+- Chrome latest version
+- Selenium WebDriver
+- Apache Maven 3.8.0 or later
 
-## Contact
+### __2. Running the automations__
 
-- [Mincho K.](mailto:mincho.qa.kuzmanov@gmail.com)
-- Project Link: [iSkillo automation](https://github.com/dildude/Final_project_Skillo)
-- [LinkedIn](https://www.linkedin.com/in/mincho-k-1997b212a/)
+__NB:__ Prior to running the project and automations make sure your chrome driver executables are properly provided in the project
+
+1. Clone the repo on your computer. 
+<!--- 2. Run run_automation.bat. 
+
+### __2.1. How to run UI tests automation individually__
+
+1. Run run_ui_automation.bat file at the root location of the repo.
+2. Go to terminal and execute mvn -clean test -->
+ 
+
+ 

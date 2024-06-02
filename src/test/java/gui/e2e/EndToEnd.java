@@ -16,7 +16,7 @@ public class EndToEnd extends BaseTest {
     @Test
     public void endToEndTest() {
 
-        final String NEWUSERNAME = "TestMincho9";
+        final String NEWUSERNAME = "TestMincho10";
         final String EMAIL = "crikigo9@yopmail.com";
         final String REGPASSWORD = "123456";
         final String CONFIRMPASSWORD = "123456";

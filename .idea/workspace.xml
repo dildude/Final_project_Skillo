@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adebbd4b-9df0-4568-9c45-7fb2e32c547d" name="Changes" comment="git ignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/e2e/EndToEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/e2e/EndToEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gui/regression/registration/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +84,7 @@
       <recent name="gui.regression.registration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EndToEnd.endToEndTest">
+  <component name="RunManager" selected="TestNG.LoginTest.navigatingAndLoggingIn">
     <configuration name="EndToEndTest.verifyUserCanCreateNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium_4_TestNG_TAF" />
       <extension name="coverage">
@@ -172,8 +177,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.EndToEnd.endToEndTest" />
         <item itemvalue="TestNG.LoginTest.navigatingAndLoggingIn" />
+        <item itemvalue="TestNG.EndToEnd.endToEndTest" />
         <item itemvalue="TestNG.ProfileHappyPath.verifyUserCanUpdateProfilePicture" />
         <item itemvalue="TestNG.PostHappyPath.verifyUserCanCreateNewPost" />
         <item itemvalue="TestNG.EndToEndTest.verifyUserCanCreateNewPost" />
