@@ -40,7 +40,7 @@ Nikolay Nikolov - supervision
 
 ## III. DELIVERABLES
 1. [Master Test Plan v3.0](https://docs.google.com/document/d/1wuTA4Rq1poldgVMGZc8Z05eqvVL6nIKyPe_qLc4YdWw/edit?usp=sharing)
-2. [CloudBaseStorage at GoogleDrive]() <br />
+2. [CloudBaseStorage at GoogleDrive](https://docs.google.com/document/d/12v6EwlpcaZ6-ElIUy1ywCgLtSApxXfSUFnN9axgx-BY/edit?usp=sharing) <br />
 2.1 [Test cases]()
 - Log in (Happy path)
 - Registration (Happy path)
