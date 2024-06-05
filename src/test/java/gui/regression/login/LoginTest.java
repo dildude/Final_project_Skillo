@@ -1,8 +1,9 @@
 package gui.regression.login;
 
 import gui.base.BaseTest;
-import org.mincho.POM.HomePage;
-import org.mincho.POM.LoginPage;
+
+import org.mincho.POM.*;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

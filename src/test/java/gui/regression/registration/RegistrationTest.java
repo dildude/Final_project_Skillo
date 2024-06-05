@@ -1,20 +1,21 @@
 package gui.regression.registration;
 
 import gui.base.BaseTest;
-import org.mincho.POM.HomePage;
-import org.mincho.POM.RegistrationPage;
+import org.mincho.POM.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static utils.ContentGeneration.*;
 
 public class RegistrationTest extends BaseTest {
 
     @Test
     public void navigationAndRegistration() {
         // need to be change before test with non existing user (i didn't find delete user)
-        final String NEWUSERNAME = "TestMincho4";
-        final String EMAIL = "crikigo4@yopmail.com";
-        final String PASSWORD = "123456";
-        final String CONFIRMPASSWORD = "123456";
+        final String NEWUSERNAME = createUser();
+        final String EMAIL = createEmail();
+        final String PASSWORD = createPassword();
+        final String CONFIRMPASSWORD = PASSWORD;
 
         RegistrationPage registrationPage = new RegistrationPage(super.driver, log);
 

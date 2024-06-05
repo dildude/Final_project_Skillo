@@ -1,9 +1,8 @@
 package gui.regression.profile;
 
 import gui.base.BaseTest;
-import org.mincho.POM.HomePage;
-import org.mincho.POM.LoginPage;
-import org.mincho.POM.ProfilePage;
+
+import org.mincho.POM.*;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
